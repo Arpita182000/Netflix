@@ -15,7 +15,7 @@ import { addLangSlice } from "../utils/gptlangSlice";
 import Footer from "../common/Footer"
 function Browse() {
   const gptStore = useSelector((store) => store.gpt.toggleState);
-  console.log(gptStore);
+  // console.log(gptStore);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleSignOut = () => {

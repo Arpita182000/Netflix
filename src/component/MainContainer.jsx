@@ -48,7 +48,7 @@ function MainContainer() {
      }
      
         const movieLink = movie[0];
-        console.log(movieLink)
+        // console.log(movieLink)
         
         const{id,original_title,overview}=movieLink;
         return (
