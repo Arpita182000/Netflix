@@ -15,7 +15,7 @@ function Footer() {
                        <li>Cookie Preferences</li>
                        <li>Speed Test</li>
                        <li>  <select
-                        className="w-[140px] text-center text-white bg-black border-[1px] rounded-[5px] py-[4px]">
+                        className="max-w-[250px] text-center text-white bg-black border-[1px] rounded-[5px] py-[4px]">
                         <option>English</option>
                         <option>Hindi</option>
                     </select></li>

@@ -78,12 +78,12 @@ const Header = () => {
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
-          <div className="max-w-[700px] gap-[10px] justify-center items-center flex flex-col sm:flex sm:flex-row mx-auto sm:my-[0] my-[15px] sm:mb-[14.8%]  ">
+          <div className="max-w-[700px] gap-[10px] justify-center items-center flex sm:flex sm:flex-row mx-auto sm:my-[0] my-[15px] sm:mb-[14.8%]  ">
             <input
-              className="w-[60%]  bg-transparent border-[1px] sm:p-3 p-[8px] rounded-[5px]"
+              className="md:w-[60%]   bg-transparent border-[1px] sm:p-3 p-[8px] rounded-[5px]"
               placeholder="Email Address"
             />
-            <button className="bg-[#d9232e] sm:p-[10px] py-[8px] text-white text-[12px] w-[30%] font-bold sm:text-2xl flex justify-center gap-[5px] items-center">
+            <button className="rounded bg-[#d9232e]  p-[10px] sm:p-[10px] py-[8px] text-white text-[12px] md:w-[30%] font-bold sm:text-2xl flex justify-center gap-[5px] items-center">
               Get Started
               <i className="fa-solid fa-angle-right"></i>
             </button>
