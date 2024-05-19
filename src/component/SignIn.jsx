@@ -157,14 +157,14 @@ const SignIn = () => {
               </form>
               {isSignIn ? (
                 <p
-                  className="text-xs py-3 cursor-pointer"
+                  className="text-xs py-3 cursor-pointer text-[#48a8df] underline"
                   onClick={toggleSignInbtn}
                 >
-                  not a user ? <Link>sign up now</Link>
+                  not a user ? <Link >sign up now</Link>
                 </p>
               ) : (
                 <p
-                  className="text-xs py-3 cursor-pointer"
+                  className="text-xs py-3 cursor-pointer text-[#48a8df] underline"
                   onClick={toggleSignInbtn}
                 >
                   already a user ? <Link>sign in now</Link>
