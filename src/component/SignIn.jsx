@@ -42,12 +42,12 @@ const SignIn = () => {
           // Signed up
           const user = userCredential.user;
           navigate("/browse");
-          console.log(user);
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
           const errorMessage = error.message;
-          console.log(errorMessage);
+          // console.log(errorMessage);
           if (errorCode === "auth/email-already-in-use") {
             toast.error("Email already exists");
           }
@@ -64,7 +64,7 @@ const SignIn = () => {
           // Signed in
           const user = userCredential.user;
           navigate("/browse");
-          console.log(user);
+          // console.log(user);
         })
         .catch((error) => {
           const errorCode = error.code;
