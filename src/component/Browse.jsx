@@ -42,37 +42,38 @@ function Browse() {
   return (
     <>
       <section className="w-full">
-        <div className=" w-11/12 flex justify-between items-center absolute z-50 mx-[3%]">
-          <div className="lg:max-w-[180px] max-w-[130px]">
-            <img alt="" src={logo} className="w-full h-full" />
-          </div>
-          <div className="flex justify-end gap-6">
-            {gptStore && (
-              <select
-                className="w-[140px] text-center text-white bg-black border-[1px] rounded-[5px] py-[3px] lg:px-6 px-3 p-2 lg:text-lg sm:text-xs "
-                onChange={changeLang}
-              >
-                {Language_Data.map((v, i) => (
-                  <option key={i} value={v.identifier}>
-                    {v.name}
-                  </option>
-                ))}
-              </select>
-            )}
-            <button
-              className="bg-purple-800 lg:px-6 px-3 p-2 lg:text-lg sm:text-xs font-semibold rounded-lg text-white shadow-lg "
-              onClick={handleGPTsearch}
-            >
-              {gptStore ? "Home" : "Gpt Search"}
-            </button>
-            <button
-              className="bg-white  text-lg font-semibold rounded-lg shadow-lg lg:px-6 px-3 p-2 lg:text-lg sm:text-xs"
-              onClick={handleSignOut}
-            >
-              Sign Out
-            </button>
-          </div>
-        </div>
+      <div className="w-11/12 block lg:flex justify-between items-center absolute z-50 mx-[3%]">
+  <div className="lg:max-w-[180px] max-w-[160px] mx-auto lg:mx-0 mb-4 lg:mb-0">
+    <img alt="" src={logo} className="w-full h-full" />
+  </div>
+  <div className="flex sm:flex-row justify-center  sm:justify-end lg:gap-6">
+    {gptStore && (
+      <select
+        className="max-w-[140px] text-center text-white bg-black border-[1px] rounded-[5px] py-[1px] lg:px-6 px-2 lg:text-[19px] text-[12px] mx-auto lg:mx-0"
+        onChange={changeLang}
+      >
+        {Language_Data.map((v, i) => (
+          <option key={i} value={v.identifier}>
+            {v.name}
+          </option>
+        ))}
+      </select>
+    )}
+    <button
+      className="bg-purple-800 lg:px-6 px-1 p-2 lg:text-[19px] text-[12px] font-semibold rounded-lg text-white shadow-lg mx-auto lg:mx-0"
+      onClick={handleGPTsearch}
+    >
+      {gptStore ? "Home" : "Gpt Search"}
+    </button>
+    <button
+      className="bg-white font-semibold rounded-lg shadow-lg lg:px-6 px-3 p-2 lg:text-[19px] text-[12px] mx-auto lg:mx-0"
+      onClick={handleSignOut}
+    >
+      Sign Out
+    </button>
+  </div>
+</div>
+
 
         {gptStore ? (
           <GptContainer />

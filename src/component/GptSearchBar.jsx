@@ -35,7 +35,7 @@ const GptSearchBar = () => {
                   />
 
                 <button
-                  className="w-[22%] my-2 p-3  bg-red-700 rounded text-[19px] text-white" onClick={handelIndputValue} >{lang[langSlice]?.search}
+                  className="w-[22%] my-2 p-3  bg-red-700 rounded lg:text-[19px] text-[12px] text-white" onClick={handelIndputValue} >{lang[langSlice]?.search}
                 </button>
               </form>
               <SearchMovie/>

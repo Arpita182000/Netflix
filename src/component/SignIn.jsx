@@ -108,7 +108,7 @@ const SignIn = () => {
                 <input
                   ref={email}
                   className="w-full my-2 p-2 rounded bg-slate-800 "
-                  type="text"
+                  type="email"
                   placeholder="Email Address"
                 />
                 {/* <p className="text-[red] font-bold">{errorMessage}</p> */}
